@@ -1,12 +1,10 @@
 var gulp = require('gulp'),
 	uglify = require('gulp-uglify'),
-	 gutil = require('gulp-uglify'),
 	concat = require('gulp-concat'),
  autopre = require('gulp-autoprefixer'),
  minicss = require('gulp-minify-css'),
  livereload = require('gulp-livereload'),
  imagemin = require('gulp-imagemin');
-
 gulp.task('js', function() {
     gulp.src('js/*.js')
         .pipe(uglify())
